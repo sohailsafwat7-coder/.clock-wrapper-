@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="clock-wrapper">
+    <div class="clock-face">
+      <div class="scanline"></div>
+
+      <div class="date-display" id="dateDisplay">Monday — May 17, 2026</div>
+
+      <div class="time-row">
+        <div class="digit-block">
+          <div class="digit" id="hours">00</div>
+          <div class="digit-label">hours</div>
+        </div>
+        <div class="colon" id="colon1">:</div>
+        <div class="digit-block">
+          <div class="digit" id="minutes">00</div>
+          <div class="digit-label">min</div>
+        </div>
+        <div class="colon" id="colon2">:</div>
+        <div class="digit-block">
+          <div class="digit" id="seconds">00</div>
+          <div class="digit-label">sec</div>
+        </div>
+        <div class="ampm" id="ampm"></div>
+      </div>
+
+      <div class="seconds-bar-wrap">
+        <div class="seconds-bar" id="secBar" style="width:0%"></div>
+      </div>
+
+      <div class="bottom-row">
+        <div class="day-indicator" id="dayDots"></div>
+        <div class="tz-badge" id="tzBadge">Local</div>
+        <button class="mode-btn" onclick="toggleMode()">12h / 24h</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
